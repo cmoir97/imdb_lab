@@ -4,6 +4,10 @@ require_relative('models/casting')
 
 require('pry')
 
+Casting.delete_all()
+Movie.delete_all()
+Star.delete_all()
+
 star1 = Star.new({'first_name' => 'Ewan', 'last_name' => 'Mcgregor' })
 star1.save()
 

@@ -29,7 +29,10 @@ class Casting
 
       end
 
-
+      def self.delete_all()
+        sql = "DELETE FROM castings"
+        SqlRunner.run(sql)
+      end
 
 
 
