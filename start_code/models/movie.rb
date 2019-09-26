@@ -29,7 +29,7 @@ class Movie
         sql = "UPDATE movies SET
         (
           title,
-          genre
+          genre,
 
           ) = ($1, $2) WHERE id = $3"
           values =[@title, @genre, @id]
