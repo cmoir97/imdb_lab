@@ -5,6 +5,7 @@ require_relative('models/casting')
 require('pry')
 
 star1 = Star.new({'first_name' => 'Ewan', 'last_name' => 'Mcgregor' })
+star1.save()
 
 movie1 = Movie.new({'title' => 'Trainspotting', 'genre' => 'Drama'})
 
