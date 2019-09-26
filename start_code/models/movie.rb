@@ -23,6 +23,17 @@ class Movie
         values = [@title, @genre]
         movie = SqlRunner.run(sql, values).first
         @id = movie['id'].to_i
-  end
+      end
 
-end
+      def update()
+        sql = "UPDATE movies SET
+        (
+          title,
+          genre
+
+          ) = ($1, $2) WHERE id = $3"
+          values =[@title, @genre, @id]
+          SqlRunner.run(sql, values)
+        end
+
+      end

@@ -27,11 +27,12 @@ class Casting
         casting = SqlRunner.run(sql, values).first
         @id = casting['id'].to_i
 
-  end
+      end
 
 
 
 
 
 
-end
+
+    end
