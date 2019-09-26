@@ -23,7 +23,6 @@ class Star
         values = [@first_name, @last_name]
         star = SqlRunner.run(sql, values).first
         @id = star['id'].to_i
-
   end
 
 end
